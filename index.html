@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h>
+        <div class="calculadora">
+            <input type="text" disabled id="display" >
+            <div class="caixaButoes">
+                <button onclick="limpar('c')">c</button>
+                <button onclick="voltar('<')">&lt;</button>
+                <button onclick="inserir('/')">/</button>
+                <button onclick="inserir('*')">*</button>
+                <button onclick="inserir('7')">7</button>
+                <button onclick="inserir('8')">8</button>
+                <button onclick="inserir('9')">9</button>
+                <button class="btn-menos" onclick="inserir('-')">-</button>
+                <button onclick="inserir('4')">4</button>
+                <button onclick="inserir('5')">5</button>
+                <button onclick="inserir('6')">6</button>
+                <button class="btn-mais" onclick="inserir('+')">+</button>
+                <button onclick="inserir('1')">1</button>
+                <button onclick="inserir('2')">2</button>
+                <button onclick="inserir('3')">3</button>
+                <button class="btn-zero" onclick="inserir('0')">0</button>
+                <button onclick="inserir('.')">.</button>
+                <button class="btn-igual" onclick="resultado()">=</button>
+            </div>
+        </div>
+        <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
